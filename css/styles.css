@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;    
+}
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(35, 167, 140);
+}
+#left-nav {
+    padding: 15px;
+    float: left;
+    left: 0px;
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    background-color: rgb(50,50,50);
+    color: lightblue;
+    transition: 0.4s;
+    box-shadow: -5px 0px 5px black inset;
+}
+
+#nav-title {
+    text-shadow: -5px 5px 5px black;
+    line-height: 4px;
+}
+
+.edit-btn {
+    visibility: hidden;
+    margin: 2px;
+}
+
+#collapse {
+    position: absolute;
+    width: 20px;
+    left: 278px;
+    top: 8px;
+    border-radius: 0px;
+    font-size: 25px;
+    color: lightblue;
+    transition: 0.4s;
+    text-shadow: -5px 5px 5px black;
+}
+
+#collapse:focus, #collapse:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+#title-input, #index-input, #new-index-input {
+    position: absolute;
+    left: 80px;
+}
+
+#content-input {
+    min-width: 290px;
+    height: auto;
+}
+
+.tab-input {
+    color: black;
+}
+
+.nav-btn {
+    float: right;
+    box-shadow: -5px 5px 5px black;
+}
+
+.btn {
+    border-radius: 0px; 
+}
+
+
+
+#container {
+    padding: 15px;
+    position: relative;
+    float: left;
+    margin-left: 320px;
+    transition: 0.4s;
+}
+
+#content {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+.tab {
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(220, 220, 220);
+    outline: none !important; 
+    border: 1px;
+    margin: 1px;
+}
+
+.tab:focus {
+    outline: none;
+    background-color: white;
+}
+
+.tab:hover {
+    background-color: rgb(240, 240, 240) !important;
+}
+
+
+

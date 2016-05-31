@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <!--Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
+         <!--jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+         <!--Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet"/>
+        <script src="js/scripts.js"></script>
+        <title>Playground</title>
+    </head>
+    <body>
+        <div id="page">
+            <nav id="left-nav">
+                <button class="btn btn-link btn-lg" id="collapse" onclick="toggleCollapse()">&#9664;</button>
+                <form id="left-nav-form" method="post">
+                    <p>
+                        <h3 id="nav-title">Add your own tab</h3>
+                    </p><br><br>
+                    <p>
+                        Index:
+                        <input class="tab-input" id="index-input" type="number" min="1" name="index" placeholder="Enter tab index">
+                        <input class="tab-input" id="new-index-input" type="number" min="1" name="new-index" placeholder="Enter tab index">
+                    </p>
+                    <p>
+                        Title:
+                        <input class="tab-input" id="title-input" type="text" name="title" placeholder="Enter tab title">
+                    </p><br>
+                    <p>
+                        Html content:<br>
+                        <textarea class="tab-input" id="content-input" rows="10" name="content" placeholder="Enter tab content"></textarea>
+                    </p>
+                    <input type="submit" class="btn btn-primary nav-btn add-btn" id="add-btn" value="Add">
+                    <input type="submit" class="btn btn-primary nav-btn edit-btn" id="save-btn" value="Save">
+                    <input type="submit" class="btn btn-primary nav-btn edit-btn" id="delete-btn" value="Delete">
+                    <input type="button" class="btn btn-primary nav-btn edit-btn" id="close-btn" value="Close">
+                </form>
+            </nav>
+            <div id="container">
+                <fieldset id="content"></fieldset>
+            </div>
+        </div>
+    </body>
+</html>
